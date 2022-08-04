@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LINQ.Tests
 {
-    internal class JoinTest
+    public class JoinTest
     {
+
     }
 }

@@ -29,5 +29,13 @@ public class Program
         /* LINQ Grouping Işlemleri */
         GroupingTest grpTest = new GroupingTest();
         grpTest._GroupBy();
+
+        /* LINQ Join Işlemleri */
+        JoinTest joinTest = new JoinTest();
+        
+        /* LINQ Ordering Işlemleri */
+        OrderingTest ordTest = new OrderingTest();
+        ordTest._OrderBy();
+        ordTest._OrderByDescending();
     }
 }

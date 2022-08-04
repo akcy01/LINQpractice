@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* InnerJoin LeftOuterJoin işlemlerini yapar. */
 namespace LINQ.LINQSubjects
 {
-    internal class Join
+    public class Join
     {
+
     }
 }
