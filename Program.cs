@@ -15,5 +15,6 @@ public class Program
         ConversionTest convTest = new ConversionTest();
         convTest._OfType();
         convTest._ToDictionary();
+        convTest._ToLookUp();
     }
 }

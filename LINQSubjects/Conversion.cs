@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace LINQ.LINQSubjects
 {
     /* OfType => Elemanlar arasından belirtilen type’a göre filtreleme yapar. */
+    /* ToDictionary => Collection’u Dictionary’e çeviren extensiondur. */
+    /* ToLookUp => Collection’u key bazlı gruplayan extensiondur. */
     public class Conversion // Conversion türkçesi => Dönüştürmek
     {
        public IEnumerable<object> OfType(List<object> objects)
@@ -16,8 +18,12 @@ namespace LINQ.LINQSubjects
         }
        public Dictionary<Student,string> ToDictionary(List<Student> students)
         {
-            return students.ToDictionary(x => x, v => v.Id > 2  ? "New" : "Old");   
+            return students.ToDictionary(x => x, v => v.Note > 50  ? "Geçti" : "Kaldı");   
         }
-
+        public IEnumerable<Student> ToLookUp(List<Student> students)
+        {
+            return students.ToLookup(c=> c.Category)["Basketball"];
+            /* Sadece basketball key'ine göre verileri döndürdüm. */
+        }
     }
 }

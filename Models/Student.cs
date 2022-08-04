@@ -10,6 +10,7 @@ namespace LINQ.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }    
+        public string Category { get; set; }
         public int Age { get; set; }
         public decimal Note { get; set; }
         public ICollection<Lesson> Lessons { get; set; }

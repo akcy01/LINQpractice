@@ -27,15 +27,28 @@ namespace LINQ.Tests
                 Console.WriteLine(item);
             }
         }
-
         public void _ToDictionary()
         {
             var students = UntrueStudent.FakeData.Generate(5);
             var result = con.ToDictionary(students);
-
+            Console.WriteLine("Students model'indeki notuna göre geçti veya kaldı bilgisi. ");
             foreach (var item in result)
             {
                 Console.WriteLine(item.Value);
+            }
+        }
+        public void _ToLookUp()
+        {
+            var students = UntrueStudent.FakeData.Generate(10);
+            var result = con.ToLookUp(students);
+            Console.WriteLine("Basketbol Takımına giren öğrenci bilgileri ");
+
+            foreach (var item in result)
+            {
+                Console.WriteLine("Kimlik Numarası => " + item.Id);
+                Console.WriteLine("İsim => " + item.Name );
+                Console.WriteLine("Yaş => " + item.Age);
+                Console.WriteLine("Not => " + item.Note);
             }
         }
 
