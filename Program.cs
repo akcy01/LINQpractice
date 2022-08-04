@@ -16,5 +16,18 @@ public class Program
         convTest._OfType();
         convTest._ToDictionary();
         convTest._ToLookUp();
+
+        /* LINQ Element Işlemleri */
+        ElementTest elmTest = new ElementTest();
+        elmTest._First();
+        elmTest._FirstOrDefault();
+        elmTest._Last();
+        elmTest._LastOrDefault();
+        elmTest._Single();
+        elmTest._SingleOrDefault();
+
+        /* LINQ Grouping Işlemleri */
+        GroupingTest grpTest = new GroupingTest();
+        grpTest._GroupBy();
     }
 }
