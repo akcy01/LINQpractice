@@ -10,5 +10,10 @@ public class Program
         deneme._Max(); 
         deneme._Min(); 
         deneme._Sum(); 
+
+        /* LINQ Conversion Işlemleri */ 
+        ConversionTest convTest = new ConversionTest();
+        convTest._OfType();
+        convTest._ToDictionary();
     }
 }

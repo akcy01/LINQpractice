@@ -13,3 +13,5 @@ D:\LINQprtce\LINQ\obj\Debug\net6.0\refint\LINQ.dll
 D:\LINQprtce\LINQ\obj\Debug\net6.0\LINQ.pdb
 D:\LINQprtce\LINQ\obj\Debug\net6.0\LINQ.genruntimeconfig.cache
 D:\LINQprtce\LINQ\obj\Debug\net6.0\ref\LINQ.dll
+D:\LINQprtce\LINQ\bin\Debug\net6.0\Bogus.dll
+D:\LINQprtce\LINQ\obj\Debug\net6.0\LINQ.csproj.CopyComplete
