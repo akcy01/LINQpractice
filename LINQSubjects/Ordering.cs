@@ -19,5 +19,11 @@ namespace LINQ.LINQSubjects
             /* Büyükten küçüğe sıralar. */
             return numbers.OrderByDescending(x => x).ToList();
         }
+        public IEnumerable<Student> Reverse(List<Student> students)
+        {
+            /* Koleksiyonu tersine döndürür. */
+            students.Reverse();
+            return students;
+        }
     }
 }

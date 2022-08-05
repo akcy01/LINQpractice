@@ -37,5 +37,6 @@ public class Program
         OrderingTest ordTest = new OrderingTest();
         ordTest._OrderBy();
         ordTest._OrderByDescending();
+        ordTest._Reverse();
     }
 }

@@ -1,4 +1,6 @@
 ﻿using LINQ.LINQSubjects;
+using LINQ.Models;
+using LINQ.Tests.FakeData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,5 +30,22 @@ namespace LINQ.Tests
                 Console.WriteLine(item);
             }
         }
+        public void _Reverse()
+        {
+            /* Önce listenin normal halini yazdırdık.Sonra reverse edilmiş halini.Reverse listei tersine döndürme işlemini gerçekleştirir. */
+            var students = UntrueStudent.FakeData.Generate(10);
+            foreach (var student in students)
+            {
+                Console.WriteLine(student.Name);
+                Console.WriteLine(student.Age);
+            }
+            var result = ord.Reverse(students);
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.Name);
+                Console.WriteLine(item.Age);
+            }
+        }
+
     }
 }
