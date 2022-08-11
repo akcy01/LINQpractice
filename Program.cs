@@ -38,5 +38,21 @@ public class Program
         ordTest._OrderBy();
         ordTest._OrderByDescending();
         ordTest._Reverse();
+
+        /* LINQ Partitioning Işlemleri */
+        PartitioningTest prtTest = new PartitioningTest();
+        prtTest._Skip();
+        prtTest._SkipWhile();
+
+        /* LINQ Projection Işlemleri */
+        ProjectionTest prjTest = new ProjectionTest();
+        prjTest._Select();
+        //prjTest._SelectMany()
+
+        /* LINQ Quantifiers Işlemleri */
+        QuantifiersTest quantTest = new QuantifiersTest();
+        quantTest._All();
+        quantTest._Any();
+        quantTest._Contains();
     }
 }
