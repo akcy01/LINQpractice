@@ -58,5 +58,12 @@ public class Program
         /* LINQ Restriction Işlemleri */
         RestrictionTests restTest = new RestrictionTests();
         restTest._RestrictionTest();
+
+        /* LINQ Set Işlemleri */
+        SetTests setTest = new SetTests();
+        setTest._Distinct();
+        setTest._Except();
+        setTest._Intersect();
+        setTest._Union();
     }
 }
