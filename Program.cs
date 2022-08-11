@@ -54,5 +54,9 @@ public class Program
         quantTest._All();
         quantTest._Any();
         quantTest._Contains();
+
+        /* LINQ Restriction Işlemleri */
+        RestrictionTests restTest = new RestrictionTests();
+        restTest._RestrictionTest();
     }
 }
